@@ -1,5 +1,5 @@
 /* Google Font Import */
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
 /* Global Reset */
@@ -12,6 +12,23 @@
 /* Body CSS */
 body {
   max-width: 100%;
+}
+
+/* Font Variables */
+h1, h2, h3, h4 {
+  font-family: "Lexend", sans-serif;
+}
+h5, h6, p, a, button {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Colour Variables */
+:root {
+  --darker-blue: #2C3E91; /* For Backgrounds + Footer + Navbar */
+  --dark-blue: #0D47A1; /* For Text */
+  --light-blue: #1E88E5; /* For Icons */
+  --yellow: #FDDF48; /* For Buttons */
+  --off-white: #fbfbfb; /* For Backgrounds */
 }
 
 /* Navbar CSS */
