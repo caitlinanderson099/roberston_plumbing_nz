@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+/* Body CSS */
+body {
+  max-width: 100%;
+}
+
 /* Navbar CSS */
 .navbar {
   display: flex;
