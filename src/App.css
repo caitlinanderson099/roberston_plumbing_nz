@@ -1,0 +1,101 @@
+/* Google Font Import */
+
+
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  flex-direction: row; /* desktop: horizontal */
+}
+
+/* Logo + hamburger inline */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hide mobile toggle on desktop */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Links (desktop view = horizontal row) */
+.nav-links {
+  display: flex;
+  gap: 2.4rem;
+  width: 30%;
+  align-items: center;
+}
+
+/* CTA button */
+.cta {
+  padding: 0.5rem 1rem;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cta:hover {
+  background: #005fcc;
+}
+
+/* Footer CSS */
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #1f1f1f;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Footer CSS */
+  footer {
+    font-size: 12px;
+  }
+
+  /* Navbar turns vertical */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;              /* hidden by default */
+    flex-direction: column;     /* vertical on mobile */
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
