@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 import { IoMenu } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,14 +17,14 @@ const Navbar = () => {
       {/* Logo & Hamburger */}
       <div className="nav-header">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/" onClick={() => setIsOpen(false)}>
             <img
-              src="/logo-example.jpg"
-              width="120"
+              src="/logo.svg"
+              width="200"
               height="100"
               alt="Logo"
             />
-          </Link>
+          </NavLink>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -33,12 +35,31 @@ const Navbar = () => {
 
       {/* Nav Links */}
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <Link to="/aboutus" onClick={() => setIsOpen(false)}>About Us</Link>
-        <Link to="/" onClick={() => setIsOpen(false)}>Our Services</Link>
+        <NavLink 
+          to="/aboutus" 
+          onClick={() => setIsOpen(false)} 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          ABOUT US
+        </NavLink>
 
-        <Link to="/" onClick={() => setIsOpen(false)}>
-          <button className="cta">Contact Us</button>
-        </Link>
+        <NavLink 
+          to="/ourservices" 
+          onClick={() => setIsOpen(false)} 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          OUR SERVICES
+        </NavLink>
+
+        <button 
+          className="cta" 
+          onClick={() => {
+          setIsOpen(false);
+          navigate("/contactus");
+          }}
+        >
+          CONTACT US
+        </button>
       </div>
     </nav>
   );
