@@ -11,7 +11,8 @@
 /* Body CSS */
 body {
   max-width: 100%;
-    font-family: "League Spartan", sans-serif;
+  max-height: 100%;
+  font-family: "League Spartan", sans-serif;
 }
 
 /* Colour Variables */
@@ -177,14 +178,15 @@ body {
 
 /* Footer CSS */
 footer {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
+  border-top: 1px solid black;
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 2px solid #1f1f1f;
 }
 
 footer .contact-icons {
@@ -247,5 +249,17 @@ footer .contact-icons .icon:hover {
 
   .nav-links.open {
     display: flex;
+  }
+
+  .landing-header .header-cta h1 {
+    font-size: 33px;
+  }
+
+  .landing-header .header-cta button {
+    font-size: 12px;
+  }
+
+  .page-header h1 {
+    font-size: 33px;
   }
 }
