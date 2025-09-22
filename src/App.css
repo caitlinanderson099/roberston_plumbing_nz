@@ -304,6 +304,11 @@ footer .contact-icons .icon:hover {
   .services-section .services-cont .service-item {
     flex-direction: column;
   }
+
+   .image-scroll,
+  .image-scroll2 {
+    background-attachment: scroll; /* fallback */
+  }
   
 
   /* Navbar turns vertical */
