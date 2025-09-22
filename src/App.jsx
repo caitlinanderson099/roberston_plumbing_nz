@@ -12,7 +12,7 @@ const App = () => {
     <HashRouter>
       <Navbar/>
       <Links/>
-      <Footer/>
+      {/* <Footer/> */}
      </HashRouter>
     </>
   )
