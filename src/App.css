@@ -221,7 +221,7 @@ footer .contact-icons .icon:hover {
   footer {
     font-size: 12px;
     flex-direction: column;
-    gap: 1.3rem;
+    /* gap: 1.3rem; */
   }
 
   footer .contact-icons {
