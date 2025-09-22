@@ -1,9 +1,14 @@
 import React from 'react'
+import PageHeader from '../components/PageHeader'
+
 
 const Contact = () => {
   return (
-    <div>
-      <h1>contact page</h1>
+    <div className='contact-page'>
+      <PageHeader 
+        title="Contact Us" 
+        backgroundImage="/about-bg.webp" 
+      />
     </div>
   )
 }

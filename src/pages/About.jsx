@@ -1,9 +1,14 @@
 import React from 'react'
+import PageHeader from '../components/PageHeader'
+
 
 const About = () => {
   return (
     <div className='about-page'>
-      <h1>About Page Here</h1>
+      <PageHeader 
+        title="About Us" 
+        backgroundImage="/about-bg.webp" 
+      />    
     </div>
   )
 }

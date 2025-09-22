@@ -1,4 +1,5 @@
 import React from 'react'
+import LandingHeader from '../components/LandingHeader'
 
 const Home = () => {
 
@@ -8,7 +9,10 @@ const Home = () => {
   // MASTER RETURN
   return (
     <div className='home-page'>
-      <h1>Home Page Here</h1>
+      <LandingHeader 
+        title="Robertson Heating & Plumbing " 
+        backgroundImage="/about-bg.webp" 
+      />   
     </div>
   )
 }
