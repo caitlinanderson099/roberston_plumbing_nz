@@ -179,14 +179,15 @@ body {
 /* Footer CSS */
 footer {
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   align-items: center;
-  z-index: 100;
+  gap: 2rem;
   border-top: 1px solid black;
   position: fixed;
   bottom: 0;
   width: 100%;
+  margin-top: 40%;
 }
 
 footer .contact-icons {
@@ -220,13 +221,11 @@ footer .contact-icons .icon:hover {
   /* Footer CSS */
   footer {
     font-size: 12px;
-    flex-direction: column;
-    /* gap: 1.3rem; */
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
   }
-
-  footer .contact-icons {
-    margin-top: 1.3rem;
-  }
+  
 
   /* Navbar turns vertical */
   .navbar {
