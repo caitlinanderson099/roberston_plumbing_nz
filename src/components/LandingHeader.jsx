@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const LandingHeader = ({ title, backgroundImage }) => {
   const headerStyle = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '400px',
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
@@ -26,10 +26,23 @@ const LandingHeader = ({ title, backgroundImage }) => {
       {/* Overlay */}
       <div className="overlay"></div>
       <div className="header-cta">
+        <img src="/logo2.svg" alt="Robertson Plumbing Logo" />
         {/* Title */}
       <h1 className="header-title">{title}</h1>
-      {/* CTA Button */}
-      <button onClick={handleContact}>GET IN TOUCH TODAY!</button>
+      <div className="icons-button">
+        {/* CTA Button */}
+      <button onClick={handleContact}>Get a quote today</button>
+        <div className="social-icons">
+          <h4>Follow us on our socials</h4>
+          <div className='icons'>
+            <FaFacebook/>
+            <FaInstagram/>
+          </div>
+          
+        </div>
+      
+      </div>
+      
       </div>
       
     </div>

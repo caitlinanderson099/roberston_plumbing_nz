@@ -131,14 +131,14 @@ const Home = () => {
   return (
     <div className='home-page'>
       <LandingHeader
-        title="Robertson Heating & Plumbing "
-        backgroundImage="/about-bg.webp"
+        title="Robertson Plumbing Solutions Ltd "
+        backgroundImage="/landing-bg.jpeg"
       />
-      <ServiceSection />
+      {/* <ServiceSection />
       <ImageScroll1 />
       <TestimonialSection />
       <ImageScroll2 />
-      <GallerySection />
+      <GallerySection /> */}
     </div>
   )
 }

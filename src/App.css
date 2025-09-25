@@ -22,6 +22,7 @@ body {
   --vibrant-green: #10B981; /* Accent Colour for Icons & Highlights & Hover Effect for Navbar */
   --light-grey: #F3F4F6; /* Background Colour for Navbar & Cards + Heading  and Text Colour */
   --navy-blue: #2C3E91; /* Background Colour for Sections */
+  --yellow-color: #FDDF48;
 }
 
 /* Navbar CSS */
@@ -78,7 +79,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px; /* line thickness */
-  background-color: var(--vibrant-green);
+  background-color: var(--yellow-color);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -106,17 +107,18 @@ body {
 /* CTA button */
 .cta {
   padding: 10px;
-  background: var(--electric-blue);
-  color: var(--light-grey);
+  background: var(--yellow-color);
+  color: var(--charcoal-black);
   border: none;
   font-weight: 600;
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 .cta:hover {
-  background: #005fcc;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  background-color: #e1bf15;
 }
 
 /* Page Header CSS */
@@ -133,7 +135,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for darkness */
   z-index: 1;
 }
 
@@ -149,31 +151,85 @@ body {
   box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+  height: 90vh;
+  img {
+    z-index: 1;
+  }
 }
 
 /* Home Page Header */
 .landing-header .header-cta {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 60px;
+  z-index: 1;
+  width: 100%;
+}
+
+.landing-header .header-cta .icons-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
+}
+
+.landing-header .header-cta img {
+  width: 200px;
+}
+
+.landing-header .header-cta .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.landing-header .header-cta .social-icons .icons {
+  display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.landing-header .header-cta .social-icons svg {
+  font-size: 2em;
+  background-color: var(--yellow-color);
+  color: var(--charcoal-black);
+  transition: all 0.3s ease;
+  border-radius: 20%;
+  padding: 5px;
+}
+
+.landing-header .header-cta .social-icons svg:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  background-color: #e1bf15;
 }
 
 .landing-header .header-cta button {
   padding: 10px;
   border-radius: 10px;
-  background-color: var(--electric-blue);
-  color: var(--light-grey);
+  background-color: var(--yellow-color);
+  color: var(--charcoal-black);
   z-index: 1000;
   border: none;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 1em;
   transition: all 0.3s ease;
+  width: 100%;
+    font-family: "League Spartan", sans-serif;
+
 }
 
 .landing-header .header-cta button:hover {
-  background: #005fcc;
   cursor: pointer;
   transition: all 0.3s ease;
+  transform: translateY(-10px);
+  background-color: #e1bf15;
 }
 
 /* Footer CSS */
@@ -183,11 +239,11 @@ footer {
   grid-template-columns: repeat(3,1fr);
   align-items: center;
   gap: 2rem;
-  border-top: 1px solid black;
-  position: fixed;
+  position: static;
+  background-color: var(--light-grey);
   bottom: 0;
   width: 100%;
-  margin-top: 40%;
+  z-index: 1;
 }
 
 footer .contact-icons {
@@ -389,6 +445,7 @@ footer .contact-icons .icon:hover {
 
   .menu-toggle {
     display: block;
+    color: var(--charcoal-black);
   }
 
   .nav-links {
@@ -405,8 +462,12 @@ footer .contact-icons .icon:hover {
   }
 
   .landing-header .header-cta h1 {
-    font-size: 33px;
+    font-size: 30px;
   }
+
+    .landing-header .header-cta .icons-button{
+      width: 100%;
+    }
 
   .landing-header .header-cta button {
     font-size: 12px;

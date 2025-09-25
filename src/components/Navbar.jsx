@@ -40,7 +40,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          ABOUT US
+          About us
         </NavLink>
 
         <NavLink 
@@ -48,7 +48,31 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          OUR SERVICES
+          Plumbing
+        </NavLink>
+
+        <NavLink 
+          to="/ourservices" 
+          onClick={() => setIsOpen(false)} 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Drainlaying
+        </NavLink>
+
+        <NavLink 
+          to="/ourservices" 
+          onClick={() => setIsOpen(false)} 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Central heating
+        </NavLink>
+
+        <NavLink 
+          to="/ourservices" 
+          onClick={() => setIsOpen(false)} 
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Testimonials & Gallerys
         </NavLink>
 
         <button 
@@ -58,7 +82,7 @@ const Navbar = () => {
           navigate("/contactus");
           }}
         >
-          CONTACT US
+          Contact us
         </button>
       </div>
     </nav>
