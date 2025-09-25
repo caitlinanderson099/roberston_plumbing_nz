@@ -427,6 +427,64 @@ footer .contact-icons .icon:hover {
   width: 50%;
 }
 
+/* Contact Page */
+.contact-form-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%; /* keeps padding on mobile */
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--charcoal-black);
+}
+
+.contact-form label span {
+  color: crimson;
+  font-weight: bold;
+}
+
+/* Inputs, Textareas, Select */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Input focus */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+}
+
+/* Textarea */
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: "League Spartan", sans-serif;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   /* Footer CSS */
@@ -453,6 +511,39 @@ footer .contact-icons .icon:hover {
   
   .testimonial-section .review-cont {
     grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+  }
+
+  /* Full-width fields */
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    grid-column: span 2;
+  }
+
+  /* Put first/last name side by side */
+  .contact-form input[name="user_firstname"],
+  .contact-form input[name="user_lastname"] {
+    grid-column: span 1;
+  }
+
+  /* Put email/phone side by side */
+  .contact-form input[name="user_email"],
+  .contact-form input[name="user_number"] {
+    grid-column: span 1;
+  }
+
+  /* Button aligned full width */
+  .contact-form button {
+    grid-column: span 2;
+    justify-self: center;
+    width: 40%;
   }
 
   /* Navbar turns vertical */

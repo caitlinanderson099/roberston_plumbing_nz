@@ -35,25 +35,26 @@ const Contact = () => {
         backgroundImage="/about-bg.webp" 
       />
 
-      <div className="contact-form-container">
+      <div className="contact-section">
+            <div className="contact-form-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           
-          <label>First Name</label>
+          <label>First Name <span>*</span></label>
           <input type="text" name="user_firstname" required />
 
-          <label>Last Name</label>
+          <label>Last Name <span>*</span></label>
           <input type="text" name="user_lastname" required />
 
-          <label>Contact Email</label>
+          <label>Contact Email <span>*</span></label>
           <input type="email" name="user_email" required />
 
-          <label>Contact Number</label>
-          <input type="tel" name="user_number" required />
+          <label>Contact Number <span>*</span></label>
+          <input type="number" name="user_number" required />
 
           <label>Address (optional)</label>
           <input type="text" name="user_address" />
 
-          <label>What service are you looking for?</label>
+          <label>What service are you looking for? <span>*</span></label>
           <select name="service" required>
             <option value="">-- Select a Service --</option>
             <option value="job_quoting">Job Quoting</option>
@@ -67,12 +68,15 @@ const Contact = () => {
           <label>How did you hear about us? (optional)</label>
           <input type="text" name="referral_source" />
 
-          <label>Message</label>
+          <label>Message <span>*</span></label>
           <textarea name="user_message" required />
 
           <button type="submit">Send</button>
         </form>
       </div>
+      </div>
+
+      
     </div>
   )
 }
