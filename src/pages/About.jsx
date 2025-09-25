@@ -3,6 +3,7 @@ import PageHeader from '../components/PageHeader'
 import { FaWrench } from 'react-icons/fa'
 import { FaTemperatureThreeQuarters } from 'react-icons/fa6'
 import { PiGridNineLight } from "react-icons/pi";
+import { useNavigate } from 'react-router-dom';
 
 
 const About = () => {
@@ -38,6 +39,13 @@ const About = () => {
     )
   }
 
+  const navigate = useNavigate();
+
+  const handleContact = (e) => {
+    e.preventDefault();
+    navigate('/contactus');
+  }
+
   // Our History Section
   const HistorySection = () => {
     return (
@@ -47,11 +55,15 @@ const About = () => {
           <hr />
         </div>
         <div className="history-content">
-          <p>(this is where there will be a coupke of images and blurb about the company and its history...)</p>
+          <p>(this is where there will be a couple of images and blurb about the company and its history...)</p>
+          <button onClick={handleContact}>Get in touch with us</button>
         </div>
       </div>
     )
   }
+
+  // Image Scroll Section #1
+  const ImageScroll1 = () => <div className="image-scroll"></div>
 
 
   // MASTER RETURN
@@ -62,6 +74,7 @@ const About = () => {
         backgroundImage="/about-bg.webp" 
       />  
       <ServiceSection/>  
+      <ImageScroll1/>
       <HistorySection/>
     </div>
   )

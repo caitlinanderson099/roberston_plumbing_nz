@@ -91,6 +91,9 @@ const TestimonialGallery = () => {
         )
     };
 
+     // Image Scroll Section #2
+  const ImageScroll2 = () => <div className="image-scroll2"></div>
+
 // MASTER RETURN
     return (
     <div className='testimonial-gallery-page'>
@@ -99,6 +102,7 @@ const TestimonialGallery = () => {
         backgroundImage="/landing-bg.jpeg"
         />
         <TestimonialSection/>
+        <ImageScroll2/>
         <GallerySection/>
         
     </div>

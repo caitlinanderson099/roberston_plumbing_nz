@@ -416,6 +416,17 @@ footer .contact-icons .icon:hover {
   text-align: right;
 }
 
+.history-section .history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.history-section .history-content button {
+  width: 50%;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   /* Footer CSS */
