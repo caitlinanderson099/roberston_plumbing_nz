@@ -485,6 +485,14 @@ footer .contact-icons .icon:hover {
   font-family: "League Spartan", sans-serif;
 }
 
+.socials .section-header {
+  text-align: center;
+}
+
+.socials, .contact-form-section {
+  padding: 20px;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   /* Footer CSS */
@@ -493,6 +501,10 @@ footer .contact-icons .icon:hover {
     grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
   }
 
   .services-section .services-cont {
@@ -525,6 +537,7 @@ footer .contact-icons .icon:hover {
   .contact-form textarea,
   .contact-form select {
     grid-column: span 2;
+    width: 100%;
   }
 
   /* Put first/last name side by side */
@@ -543,7 +556,7 @@ footer .contact-icons .icon:hover {
   .contact-form button {
     grid-column: span 2;
     justify-self: center;
-    width: 40%;
+    width: 100%;
   }
 
   /* Navbar turns vertical */

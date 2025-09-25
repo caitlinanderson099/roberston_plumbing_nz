@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import PageHeader from '../components/PageHeader'
 import emailjs from '@emailjs/browser'
+import { FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
 
 const Contact = () => {
   const form = useRef()
@@ -28,15 +29,14 @@ const Contact = () => {
       )
   }
 
-  return (
-    <div className="contact-page">
-      <PageHeader 
-        title="Contact Us" 
-        backgroundImage="/about-bg.webp" 
-      />
-
-      <div className="contact-section">
-            <div className="contact-form-container">
+  const ContactForm = () => {
+    return (
+      <div className="contact-form-section">
+        <div className="section-header">
+            <h2>Get in touch</h2>
+            <hr />
+            </div>
+        <div className="contact-form-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           
           <label>First Name <span>*</span></label>
@@ -75,7 +75,33 @@ const Contact = () => {
         </form>
       </div>
       </div>
+    )
+  };
 
+  const SocialDetails = () => {
+    return (
+      <div className="socials">
+        <div className="section-header">
+            <h2>Find us on our socials</h2>
+            <hr />
+            </div>
+        {/* <FaFacebook/>
+        <FaInstagram/>
+        <FaEnvelope/>
+        <FaPhone/> */}
+      </div>
+    )
+
+  }
+
+  return (
+    <div className="contact-page">
+      <PageHeader 
+        title="Contact Us" 
+        backgroundImage="/about-bg.webp" 
+      />
+      <ContactForm/>
+      <SocialDetails/>
       
     </div>
   )
