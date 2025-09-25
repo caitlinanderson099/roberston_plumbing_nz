@@ -25,6 +25,27 @@ body {
   --yellow-color: #FDDF48;
 }
 
+/* Button CSS */
+button {
+   padding: 10px;
+  background: var(--yellow-color);
+  color: var(--charcoal-black);
+  border: none;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: capitalize;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-family: "League Spartan", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  background-color: #e1bf15;
+}
+
 /* Navbar CSS */
 .navbar {
   display: flex;
@@ -59,7 +80,7 @@ body {
 .nav-links {
   display: flex;
   gap: 4rem;
-  width: 50%;
+  width: 100%;
   align-items: center;
 }
 
@@ -104,22 +125,6 @@ body {
   transform: scaleX(1);
 }
 
-/* CTA button */
-.cta {
-  padding: 10px;
-  background: var(--yellow-color);
-  color: var(--charcoal-black);
-  border: none;
-  font-weight: 600;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-.cta:hover {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  transform: translateY(-10px);
-  background-color: #e1bf15;
-}
 
 /* Page Header CSS */
 .page-header {
@@ -210,26 +215,8 @@ body {
 }
 
 .landing-header .header-cta button {
-  padding: 10px;
-  border-radius: 10px;
-  background-color: var(--yellow-color);
-  color: var(--charcoal-black);
   z-index: 1000;
-  border: none;
-  font-weight: 500;
-  text-transform: capitalize;
-  font-size: 1em;
-  transition: all 0.3s ease;
   width: 100%;
-    font-family: "League Spartan", sans-serif;
-
-}
-
-.landing-header .header-cta button:hover {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  transform: translateY(-10px);
-  background-color: #e1bf15;
 }
 
 /* Footer CSS */
@@ -275,8 +262,8 @@ footer .contact-icons .icon:hover {
 /* Our Services Section -- Home Page */
 .services-section, .testimonial-section {
   padding: 30px;
-  background-color: var(--navy-blue);
-  color: var(--light-grey);
+  background-color: var(--light-grey);
+  color: var(--charcoal-black);
   box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
@@ -341,7 +328,8 @@ footer .contact-icons .icon:hover {
   border-radius: 10px;
   background-color: var(--light-grey);
   text-align: center;
-  color: var(--electric-blue);
+  color: var(--charcoal-black);
+  height: 100%;
   box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
@@ -352,7 +340,7 @@ footer .contact-icons .icon:hover {
   gap: 0.5rem;
   align-items: center;
   font-size: 1.5rem;
-  color: var(--vibrant-green);
+  color: var(--yellow-color);
 }
 
 .testimonial-section .review-cont .review-item h3{
@@ -385,8 +373,8 @@ footer .contact-icons .icon:hover {
 
 .gallery-section {
   padding: 40px;
-  background-color: var(--navy-blue);
-  color: var(--light-grey);
+  background-color: var(--light-grey);
+  color: var(--charcoal-black);
 }
 
 .gallery-section .section-header {
@@ -408,6 +396,22 @@ footer .contact-icons .icon:hover {
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
+.swiper .swiper-button-prev .swiper-button-next {
+  z-index: 1;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next svg {
+  color: var(--charcoal-black);
+  background-color: var(--yellow-color);
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--yellow-color);
+  padding: 6px;
+}
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {

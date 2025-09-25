@@ -44,7 +44,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink 
-          to="/ourservices" 
+          to="/plumbing" 
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
@@ -52,7 +52,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink 
-          to="/ourservices" 
+          to="/drainlaying" 
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
@@ -60,7 +60,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink 
-          to="/ourservices" 
+          to="/centralheating" 
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
@@ -68,11 +68,11 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink 
-          to="/ourservices" 
+          to="/testimonialsandgallery" 
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          Testimonials & Gallerys
+          Testimonials & Gallery
         </NavLink>
 
         <button 
