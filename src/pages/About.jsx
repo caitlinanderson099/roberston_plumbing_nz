@@ -5,7 +5,7 @@ import { FaTemperatureThreeQuarters } from 'react-icons/fa6'
 import { PiGridNineLight } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 
-import SEO from '../components/SEO';
+// import SEO from '../components/SEO';
 
 
 const About = () => {

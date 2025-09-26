@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import PageHeader from '../components/PageHeader'
 import emailjs from '@emailjs/browser'
-import SEO from '../components/SEO'
+// import SEO from '../components/SEO'
 import { FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
 
 const Contact = () => {

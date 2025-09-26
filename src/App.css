@@ -130,6 +130,16 @@ button:hover {
 /* Page Header CSS */
 .page-header {
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F3F4F6;
+  position: relative;
+
   box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
@@ -502,6 +512,12 @@ footer .contact-icons .icon:hover {
     align-items: center;
     text-align: center;
   }
+
+   .page-header {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
 
   .section-header h2 {
     font-size: 28px;

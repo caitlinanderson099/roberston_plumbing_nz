@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
-import SEO from '../components/SEO'
+// import SEO from '../components/SEO'
 
 const CentralHeating = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import LandingHeader from '../components/LandingHeader'
-import SEO from "../components/SEO";
+// import SEO from "../components/SEO";
 
 
 const Home = () => {

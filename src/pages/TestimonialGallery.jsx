@@ -1,7 +1,7 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
 import { FaStar } from 'react-icons/fa'
-import SEO from '../components/SEO';
+// import SEO from '../components/SEO';
 
 // SwiperJS imports
 import { Swiper, SwiperSlide } from "swiper/react";
