@@ -2,7 +2,9 @@ import React, { useRef } from 'react'
 import PageHeader from '../components/PageHeader'
 import emailjs from '@emailjs/browser'
 // import SEO from '../components/SEO'
-import { FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaFacebook, FaInstagram} from 'react-icons/fa'
+import { FaPhoneVolume } from "react-icons/fa6";
+
 
 const Contact = () => {
   const form = useRef()
@@ -39,7 +41,16 @@ const Contact = () => {
             </div>
         <div className="contact-form-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-          
+          <div className="form-heading">
+<h3>Feel free to get in touch with us using the form below as well as on our socials</h3>
+          <div className="socials">
+            <FaFacebook/>
+            <FaInstagram/>
+            <FaEnvelope/>
+            <FaPhoneVolume/>
+          </div>
+          </div>
+                   
           <label>First Name <span>*</span></label>
           <input type="text" name="user_firstname" required />
 
@@ -79,37 +90,16 @@ const Contact = () => {
     )
   };
 
-  const SocialDetails = () => {
-    return (
-      <div className="socials">
-        <div className="section-header">
-            <h2>Find us on our socials</h2>
-            <hr />
-            </div>
-        {/* <FaFacebook/>
-        <FaInstagram/>
-        <FaEnvelope/>
-        <FaPhone/> */}
-      </div>
-    )
-
-  }
-
   return (
     <>
-      {/* <SEO 
-          title="Robertson Plumbing Solutions LTD | Contact Us"
-          description="Top plumbing services in Upper Hutt, Wellington."
-          url="https://robertsonplumbing.vercel.app/"
-        /> */}
       <div className="contact-page">
       <PageHeader 
         title="Contact us" 
         backgroundImage="/bg-images/contact-bg.jpg" 
       />
-      <ContactForm/>
-      <SocialDetails/>
-      
+      <div className="contact-content">
+        <ContactForm/>
+      </div>
       </div>
     </>
   )
