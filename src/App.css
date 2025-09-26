@@ -1,14 +1,14 @@
-/* Google Font Import */
+/* -------------- Google Font Import ------------ */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-/* Global Reset */
+/* ------------- Global Reset --------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body CSS */
+/* ------------- Body CSS ---------------- */
 body {
   max-width: 100%;
   max-height: 100vh;
@@ -16,17 +16,14 @@ body {
   background-color: var(--light-grey);
 }
 
-/* Colour Variables */
+/* ----------------- Colour Variables --------------- */
 :root {
-  --charcoal-black: #111827; /* Text Colour for Navbar */
-  --electric-blue: #2563EB; /* Button Background Colour + Text Colour for Body */
-  --vibrant-green: #10B981; /* Accent Colour for Icons & Highlights & Hover Effect for Navbar */
-  --light-grey: #F3F4F6; /* Background Colour for Navbar & Cards + Heading  and Text Colour */
-  --navy-blue: #2C3E91; /* Background Colour for Sections */
+  --charcoal-black: #111827; 
+  --light-grey: #F3F4F6;
   --yellow-color: #FDDF48;
 }
 
-/* Button CSS */
+/* ------------- Button CSS --------------- */
 button {
    padding: 10px;
   background: var(--yellow-color);
@@ -39,7 +36,6 @@ button {
   transition: all 0.3s ease;
   font-family: "League Spartan", sans-serif;
 }
-
 button:hover {
   cursor: pointer;
   transition: all 0.3s ease;
@@ -47,7 +43,7 @@ button:hover {
   background-color: #e1bf15;
 }
 
-/* Navbar CSS */
+/* ----------------- Navbar CSS --------------- */
 .navbar {
   display: flex;
    justify-content: center; /* centers all nav content horizontally */
@@ -60,7 +56,6 @@ button:hover {
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   flex-direction: row; /* desktop: horizontal */
 }
-
 /* Logo + hamburger inline */
 .nav-header {
   display: flex;
@@ -68,7 +63,6 @@ button:hover {
   align-items: center;
   width: 100%;
 }
-
 /* Hide mobile toggle on desktop */
 .menu-toggle {
   background: none;
@@ -76,7 +70,6 @@ button:hover {
   cursor: pointer;
   display: none;
 }
-
 /* Links (desktop view = horizontal row) */
 .nav-links {
   display: flex;
@@ -84,7 +77,6 @@ button:hover {
   width: 100%;
   align-items: center;
 }
-
 .nav-links a {
   color: var(--charcoal-black);
   font-weight: 600;
@@ -92,7 +84,6 @@ button:hover {
   position: relative; /* needed for pseudo-elements */
   padding-bottom: 6px; /* gives space for the lines */
 }
-
 /* First line */
 .nav-links a::before,
 .nav-links a::after {
@@ -105,29 +96,24 @@ button:hover {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-
 /* Position the two lines */
 .nav-links a::before {
   bottom: 0;
 }
-
 .nav-links a::after {
   bottom: -4px; /* space between the lines */
 }
-
 /* Hover effect */
 .nav-links a:hover::before,
 .nav-links a:hover::after {
   transform: scaleX(1);
 }
-
 .nav-links a.active::before,
 .nav-links a.active::after {
   transform: scaleX(1);
 }
 
-
-/* Page Header CSS */
+/* ----------------- Page Header CSS --------------- */
 .page-header {
   position: relative;
   background-size: cover;
@@ -144,7 +130,6 @@ button:hover {
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -154,7 +139,6 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
   z-index: 1;
 }
-
 .header-title {
   position: relative;
   z-index: 2;
@@ -163,6 +147,7 @@ button:hover {
   margin: 0;
 }
 
+/* ----------------- Landing Page Header CSS --------------- */
 .landing-header {
   box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
@@ -172,8 +157,6 @@ button:hover {
     z-index: 1;
   }
 }
-
-/* Home Page Header */
 .landing-header .header-cta {
   display: flex;
   flex-direction: column;
@@ -183,7 +166,6 @@ button:hover {
   z-index: 1;
   width: 100%;
 }
-
 .landing-header .header-cta .icons-button {
   display: flex;
   flex-direction: column;
@@ -191,24 +173,20 @@ button:hover {
   gap: 1rem;
   width: 30%;
 }
-
 .landing-header .header-cta img {
   width: 200px;
 }
-
 .landing-header .header-cta .social-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-
 .landing-header .header-cta .social-icons .icons {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-
 .landing-header .header-cta .social-icons svg {
   font-size: 2em;
   background-color: var(--yellow-color);
@@ -217,66 +195,26 @@ button:hover {
   border-radius: 20%;
   padding: 5px;
 }
-
 .landing-header .header-cta .social-icons svg:hover {
   cursor: pointer;
   transition: all 0.3s ease;
   transform: translateY(-10px);
   background-color: #e1bf15;
 }
-
 .landing-header .header-cta button {
   z-index: 1000;
   width: 100%;
 }
 
-/* Footer CSS */
-footer {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  align-items: center;
-  gap: 2rem;
-  position: static;
-  background-color: var(--light-grey);
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
 
-footer .contact-icons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-footer .contact-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .contact-icons .icon {
-background-color: var(--vibrant-green);
-  padding: 15px;
-  border-radius: 50%;
-  color: var(--light-grey);
-  transition: all 0.3s ease;
-}
-
-footer .contact-icons .icon:hover {
-  background-color: #0a9869;
-  transition: all 0.3s ease;
-}
-
-
-/* Our Services Section -- Home Page */
+/* -------------- Our Services Section & Testimonial Sections CSS ------------- */
 .services-section, .testimonial-section {
   padding: 30px;
   background-color: var(--light-grey);
   color: var(--charcoal-black);
 }
 
+/* ----------------- Section Header Title CSS -------------- */
 .section-header {
   display: flex;
   flex-direction: column;
@@ -286,6 +224,7 @@ footer .contact-icons .icon:hover {
   margin-bottom: 20px;
 }
 
+/* ------------- About Us Page CSS -------------- */
 .services-section .services-cont {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -294,7 +233,6 @@ footer .contact-icons .icon:hover {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 .services-section .services-cont .service-item {
   display: flex;
   flex-direction: column;
@@ -303,18 +241,90 @@ footer .contact-icons .icon:hover {
   text-align: center;
   gap: 1rem;
 }
-
 .services-section .services-cont .service-item svg {
   font-size: 4.5em;
   background-color: var(--yellow-color);
   padding: 20px;
   border-radius: 50%;
 }
+.history-section {
+  padding: 30px;
+}
+.history-section .section-header {
+  text-align: right;
+}
+.history-section .history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.history-section .history-content button {
+  width: 50%;
+}
+
+/* ----------- Contact Us Page CSS ------------- */
+.contact-form-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--light-grey);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%; /* keeps padding on mobile */
+}
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+/* Labels */
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--charcoal-black);
+}
+.contact-form label span {
+  color: crimson;
+  font-weight: bold;
+}
+/* Inputs, Textareas, Select */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+/* Input focus */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--yellow-color);
+  outline: none;
+}
+/* Textarea */
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: "League Spartan", sans-serif;
+}
+.socials .section-header {
+  text-align: center;
+}
+.socials, .contact-form-section {
+  padding: 20px;
+}
+
+/* ------------- TESTIMONIALS & GALLERY PAGE ------------- */
 
 .testimonial-section .section-header {
   text-align: right;
 }
-
 .testimonial-section .review-cont {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -323,7 +333,6 @@ footer .contact-icons .icon:hover {
   padding: 20px;
   margin: 20px 0px;
 }
-
 .testimonial-section .review-cont .review-item {
   display: flex;
   flex-direction: column;
@@ -340,7 +349,6 @@ footer .contact-icons .icon:hover {
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
 }
-
 .testimonial-section .review-cont .review-item .star-rating {
   display: flex;
   gap: 0.5rem;
@@ -348,51 +356,22 @@ footer .contact-icons .icon:hover {
   font-size: 1.5rem;
   color: var(--yellow-color);
 }
-
 .testimonial-section .review-cont .review-item h3{
   font-size: 1.6rem;
 }
-
-/* Parallax Image Section #1 -- Home Page */
-.image-scroll {
-  width: 100%;
-  height: 250px;
-  background-image: url("/bathroom-reno.jpeg"); 
-  background-attachment: fixed;  /* creates the parallax effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1000;
-}
-
-/* Parallax Image Section #2 -- Home Page */
-.image-scroll2 {
-  width: 100%;
-  height: 250px;
-  background-image: url("/bathroom-reno2.jpeg"); 
-  background-attachment: fixed;  /* creates the parallax effect */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
 .gallery-section {
   padding: 40px;
   background-color: var(--light-grey);
   color: var(--charcoal-black);
 }
-
 .gallery-section .section-header {
   text-align: center;
 }
-
 .gallery-swiper {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 30px;
 }
-
 .gallery-img {
   width: 100%;
   height: 300px;
@@ -400,11 +379,9 @@ footer .contact-icons .icon:hover {
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
-
 .swiper .swiper-button-prev .swiper-button-next {
   z-index: 1;
 }
-
 .swiper .swiper-button-prev, .swiper-button-next svg {
   color: var(--charcoal-black);
   background-color: var(--yellow-color);
@@ -412,98 +389,48 @@ footer .contact-icons .icon:hover {
   border-radius: 50%;
   font-weight: bold;
 }
-
 .swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--yellow-color);
   padding: 6px;
 }
-
-.history-section {
-  padding: 30px;
-}
-
-.history-section .section-header {
-  text-align: right;
-}
-
-.history-section .history-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.history-section .history-content button {
-  width: 50%;
-}
-
-/* Contact Page */
-.contact-form-container {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 90%; /* keeps padding on mobile */
-}
-
-/* Form layout */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-/* Labels */
-.contact-form label {
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  color: var(--charcoal-black);
-}
-
-.contact-form label span {
-  color: crimson;
-  font-weight: bold;
-}
-
-/* Inputs, Textareas, Select */
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 0.9rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  transition: all 0.2s ease-in-out;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+/* Modal box */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+.modal-img {
+  width: 80vw;       /* take up 80% of viewport width */
+  height: 80vh;      /* take up 80% of viewport height */
+  object-fit: contain; /* fit full image inside without cropping */
+  border-radius: 10px;
+}
+/* Close button */
+.modal-close {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 2rem;
+  background: var(--yellow-color);
+  border: none;
+  color: var(--charcoal-black);
+  cursor: pointer;
 }
 
-/* Input focus */
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form select:focus {
-  border-color: #0077cc;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
-}
-
-/* Textarea */
-.contact-form textarea {
-  min-height: 120px;
-  resize: vertical;
-  font-family: "League Spartan", sans-serif;
-}
-
-.socials .section-header {
-  text-align: center;
-}
-
-.socials, .contact-form-section {
-  padding: 20px;
-}
-
-/* Mobile Responsiveness */
+/* --------------- Mobile Responsiveness ---------------- */
 @media screen and (max-width: 768px) {
   /* Footer CSS */
   footer {
@@ -530,11 +457,6 @@ footer .contact-icons .icon:hover {
 
   .services-section .services-cont .service-item {
     flex-direction: column;
-  }
-
-   .image-scroll,
-  .image-scroll2 {
-    background-attachment: scroll; /* fallback */
   }
   
   .testimonial-section .review-cont {
