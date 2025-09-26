@@ -46,7 +46,7 @@ button:hover {
 /* ----------------- Navbar CSS --------------- */
 .navbar {
   display: flex;
-   justify-content: center; /* centers all nav content horizontally */
+  justify-content: center; /* centers all nav content horizontally */
   align-items: center;     /* centers them vertically */
   gap: 4rem;               /* spacing between logo, links, and CTA */
   padding: 10px;
@@ -74,8 +74,11 @@ button:hover {
 .nav-links {
   display: flex;
   gap: 4rem;
-  width: 100%;
   align-items: center;
+}
+
+.nav-links .cta {
+  width: 200px;
 }
 .nav-links a {
   color: var(--charcoal-black);

@@ -64,7 +64,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)} 
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          Central heating
+          Central Heating
         </NavLink>
 
         <NavLink 
