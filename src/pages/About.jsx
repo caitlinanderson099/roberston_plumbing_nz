@@ -5,6 +5,8 @@ import { FaTemperatureThreeQuarters } from 'react-icons/fa6'
 import { PiGridNineLight } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
 
+import SEO from '../components/SEO';
+
 
 const About = () => {
 
@@ -68,15 +70,22 @@ const About = () => {
 
   // MASTER RETURN
   return (
+    <>
+    <SEO 
+          title="Robertson Plumbing Solutions LTD | About Us"
+          description="Top plumbing services in Upper Hutt, Wellington."
+          url="https://robertsonplumbing.vercel.app/"
+        />
     <div className='about-page'>
       <PageHeader 
         title="About us" 
-        backgroundImage="/about-bg.webp" 
+        backgroundImage="/bg-images/about-bg.jpg" 
       />  
       <ServiceSection/>  
-      <ImageScroll1/>
+      {/* <ImageScroll1/> */}
       <HistorySection/>
     </div>
+    </>
   )
 }
 

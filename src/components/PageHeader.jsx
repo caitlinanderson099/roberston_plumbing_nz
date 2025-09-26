@@ -5,6 +5,7 @@ const PageHeader = ({ title, backgroundImage }) => {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+      backgroundAttachment: 'fixed',
     height: '400px',
     position: 'relative',
     display: 'flex',

@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="logo">
           <NavLink to="/" onClick={() => setIsOpen(false)}>
             <img
-              src="/logo.svg"
+              src="/logo-images/logo.svg"
               width="200"
               height="100"
               alt="Logo"

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import PageHeader from '../components/PageHeader'
 import emailjs from '@emailjs/browser'
+import SEO from '../components/SEO'
 import { FaEnvelope, FaFacebook, FaInstagram, FaPhone } from 'react-icons/fa'
 
 const Contact = () => {
@@ -95,15 +96,22 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact-page">
+    <>
+      <SEO 
+          title="Robertson Plumbing Solutions LTD | Contact Us"
+          description="Top plumbing services in Upper Hutt, Wellington."
+          url="https://robertsonplumbing.vercel.app/"
+        />
+      <div className="contact-page">
       <PageHeader 
-        title="Contact Us" 
-        backgroundImage="/about-bg.webp" 
+        title="Contact us" 
+        backgroundImage="/bg-images/contact-bg.jpg" 
       />
       <ContactForm/>
       <SocialDetails/>
       
-    </div>
+      </div>
+    </>
   )
 }
 

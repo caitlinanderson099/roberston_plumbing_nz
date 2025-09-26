@@ -7,6 +7,7 @@ const LandingHeader = ({ title, backgroundImage }) => {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
     position: 'relative',
     display: 'flex',
     alignItems: 'center',
@@ -26,7 +27,7 @@ const LandingHeader = ({ title, backgroundImage }) => {
       {/* Overlay */}
       <div className="overlay"></div>
       <div className="header-cta">
-        <img src="/logo2.svg" alt="Robertson Plumbing Logo" />
+        <img src="/logo-images/logo2.svg" alt="Robertson Plumbing Logo" />
         {/* Title */}
       <h1 className="header-title">{title}</h1>
       <div className="icons-button">

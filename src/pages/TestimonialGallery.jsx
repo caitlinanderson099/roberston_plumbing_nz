@@ -1,6 +1,7 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
 import { FaStar } from 'react-icons/fa'
+import SEO from '../components/SEO';
 
 // SwiperJS imports
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -52,10 +53,12 @@ const TestimonialGallery = () => {
 // Gallery Section (Swiper)
     const GallerySection = () => {
         const images = [
-        "/bathroom-reno.jpeg",
-        "/plumbing-img.jpeg",
-        "/drainlaying-img.jpeg",
-        "/bathroom-reno2.jpeg",
+        "/project-images/bathroom-reno.jpeg",
+        "/project-images/drainlaying-img.jpeg",
+        "/project-images/bathroom-reno2.jpeg",
+        "/project-images/bathroom-reno.jpeg",
+        "/project-images/drainlaying-img.jpeg",
+        "/project-images/bathroom-reno2.jpeg"
         ]
 
         return (
@@ -96,16 +99,23 @@ const TestimonialGallery = () => {
 
 // MASTER RETURN
     return (
+        <>
+        <SEO 
+          title="Robertson Plumbing Solutions LTD | Testimonials & Gallery"
+          description="Top plumbing services in Upper Hutt, Wellington."
+          url="https://robertsonplumbing.vercel.app/"
+        />
     <div className='testimonial-gallery-page'>
         <PageHeader
         title="Testimonials & Gallery"
-        backgroundImage="/landing-bg.jpeg"
+        backgroundImage="/bg-images/testimonial-bg.jpg"
         />
         <TestimonialSection/>
-        <ImageScroll2/>
+        {/* <ImageScroll2/> */}
         <GallerySection/>
         
     </div>
+    </>
     );
 }
 
