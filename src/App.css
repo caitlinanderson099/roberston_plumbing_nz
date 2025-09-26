@@ -515,7 +515,7 @@ footer .contact-icons .icon:hover {
 
    .page-header {
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
 
