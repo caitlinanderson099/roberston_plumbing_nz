@@ -9,11 +9,11 @@ const Home = () => {
   // MASTER RETURN
   return (
     <>
-    <SEO 
+    {/* <SEO 
           title="Robertson Plumbing Solutions LTD | Home"
           description="Top plumbing services in Upper Hutt, Wellington."
           url="https://robertsonplumbing.vercel.app/"
-        />
+        /> */}
     <div className='home-page'>
       <LandingHeader
         title="Robertson Plumbing Solutions Ltd "

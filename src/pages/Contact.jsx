@@ -97,11 +97,11 @@ const Contact = () => {
 
   return (
     <>
-      <SEO 
+      {/* <SEO 
           title="Robertson Plumbing Solutions LTD | Contact Us"
           description="Top plumbing services in Upper Hutt, Wellington."
           url="https://robertsonplumbing.vercel.app/"
-        />
+        /> */}
       <div className="contact-page">
       <PageHeader 
         title="Contact us" 

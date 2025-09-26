@@ -100,11 +100,11 @@ const TestimonialGallery = () => {
 // MASTER RETURN
     return (
         <>
-        <SEO 
+        {/* <SEO 
           title="Robertson Plumbing Solutions LTD | Testimonials & Gallery"
           description="Top plumbing services in Upper Hutt, Wellington."
           url="https://robertsonplumbing.vercel.app/"
-        />
+        /> */}
     <div className='testimonial-gallery-page'>
         <PageHeader
         title="Testimonials & Gallery"

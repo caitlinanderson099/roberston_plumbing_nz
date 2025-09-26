@@ -5,11 +5,11 @@ import SEO from '../components/SEO'
 const Drainlaying = () => {
   return (
     <>
-      <SEO 
+      {/* <SEO 
           title="Robertson Plumbing Solutions LTD | Drainlaying"
           description="Top plumbing services in Upper Hutt, Wellington."
           url="https://robertsonplumbing.vercel.app/"
-        />
+        /> */}
       <div>
         <PageHeader 
           title="Drainlaying" 

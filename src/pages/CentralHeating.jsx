@@ -5,11 +5,11 @@ import SEO from '../components/SEO'
 const CentralHeating = () => {
   return (
     <>
-      <SEO 
+      {/* <SEO 
           title="Robertson Plumbing Solutions LTD | Central Heating"
           description="Top plumbing services in Upper Hutt, Wellington."
           url="https://robertsonplumbing.vercel.app/"
-        />
+        /> */}
       <div className='central-heating-page'>
         <PageHeader 
           title="Central heating" 
